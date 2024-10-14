@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
@@ -23,12 +25,12 @@ export default function Home() {
         <div className="max-w-lg text-center lg:text-left mb-8 lg:mb-0">
           <h1 className="text-5xl font-bold mb-4">HAMZA Portfolio</h1>
           <p className="text-gray-400 text-lg mb-8">
-            I’m a student learning TypeScript, Python, and Node.js to build dynamic web applications. My focus is on creating efficient front-end and back-end solutions while improving my skills in programming. 
+            I&apos;m a student learning TypeScript, Python, and Node.js to build dynamic web applications. My focus is on creating efficient front-end and back-end solutions while improving my skills in programming.
             This portfolio showcases my projects and progress as I explore these technologies.
           </p>
           <div className="flex justify-center lg:justify-start space-x-4">
             <button className="bg-green-500 text-black px-8 py-3 rounded-lg font-semibold transition duration-200 hover:bg-green-600">
-              Let's Get Started
+              Let&apos;s Get Started
             </button>
             <button className="bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-200 hover:bg-gray-600">
               View My Work
@@ -38,15 +40,16 @@ export default function Home() {
 
         {/* Profile Image */}
         <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center">
-          <img
+          <Image
             src="/images/download.jpg" // Update this path to your image
             alt="Profile"
-            className="sq-lg w-1000px h-1000 object-cover shadow-lg" // Square shape and larger size
+            width={1000}  // Set appropriate width
+            height={1000} // Set appropriate height
+            className="object-cover shadow-lg"
           />
         </div>
       </section>
 
-     
       {/* Footer Section with Buttons */}
       <footer className="flex flex-col items-center mt-16 mb-8">
         <p className="text-gray-400 text-lg mb-4">Interested in working together? Get in touch!</p>
