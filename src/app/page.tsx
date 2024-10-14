@@ -25,7 +25,7 @@ export default function Home() {
         <div className="max-w-lg text-center lg:text-left mb-8 lg:mb-0">
           <h1 className="text-5xl font-bold mb-4">HAMZA Portfolio</h1>
           <p className="text-gray-400 text-lg mb-8">
-            I&apos;m a student learning TypeScript, Python, and Node.js to build dynamic web applications. My focus is on creating efficient front-end and back-end solutions while improving my skills in programming.
+           I am learning TypeScript, Python, and Node.js to build dynamic web applications. My focus is on creating efficient front-end and back-end solutions while improving my skills in programming.
             This portfolio showcases my projects and progress as I explore these technologies.
           </p>
           <div className="flex justify-center lg:justify-start space-x-4">
@@ -40,13 +40,7 @@ export default function Home() {
 
         {/* Profile Image */}
         <div className="mt-12 lg:mt-0 lg:ml-12 flex justify-center">
-          <Image
-            src="/images/download.jpg" // Update this path to your image
-            alt="Profile"
-            width={1000}  // Set appropriate width
-            height={1000} // Set appropriate height
-            className="object-cover shadow-lg"
-          />
+        <Image src="/images/download.jpg" alt="Profile" width={800} height={800} />
         </div>
       </section>
 
@@ -65,4 +59,3 @@ export default function Home() {
     </div>
   );
 }
-
